@@ -4,46 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rui Gao - Personal Website</title>
+    <title>Your Name - Personal Website</title>
     <style>
-        /* Your existing styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
     </style>
 </head>
 
 <body>
 
     <header>
-        <h1>Rui Gao</h1>
+        <h1>Your Name</h1>
         <p>Welcome to my personal website</p>
     </header>
 
-    <nav>
+    <section>
+        <h2>About Me</h2>
+        <p>Write a brief introduction about yourself.</p>
+
+        <h2>Projects</h2>
         <ul>
-            <li><a href="javascript:void(0);" onclick="loadPage('about.html')">About Me</a></li>
-            <li><a href="javascript:void(0);" onclick="loadPage('peer-reviewed.html')">Peer-reviewed Work</a></li>
-            <li><a href="javascript:void(0);" onclick="loadPage('projects.html')">Projects</a></li>
-            <li><a href="javascript:void(0);" onclick="loadPage('contact.html')">Contact</a></li>
-            <li><a href="javascript:void(0);" onclick="loadPage('contact.html')">Blogs</a></li>
+            <li><a href="#">Project 1</a></li>
+            <li><a href="#">Project 2</a></li>
+            <!-- Add more projects as needed -->
         </ul>
-    </nav>
 
-    <section id="content">
-        <!-- Content will be loaded here -->
+        <h2>Contact</h2>
+        <p>Email: rui.gao@msstate.edu</p>
     </section>
-
-    <script>
-        function loadPage(page) {
-            fetch(page)
-                .then(response => response.text())
-                .then(html => {
-                    document.getElementById('content').innerHTML = html;
-                })
-                .catch(error => console.error('Error fetching page:', error));
-        }
-
-        // Load the default page (e.g., about.html) on page load
-        loadPage('about.html');
-    </script>
 
 </body>
 
