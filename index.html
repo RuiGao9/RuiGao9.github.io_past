@@ -19,13 +19,30 @@
 
     <nav>
         <ul>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="peer-reviewed.html">Peer-reviewed Work</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="javascript:void(0);" onclick="loadPage('about.html')">About Me</a></li>
+            <li><a href="javascript:void(0);" onclick="loadPage('peer-reviewed.html')">Peer-reviewed Work</a></li>
+            <li><a href="javascript:void(0);" onclick="loadPage('projects.html')">Projects</a></li>
+            <li><a href="javascript:void(0);" onclick="loadPage('contact.html')">Contact</a></li>
         </ul>
     </nav>
+
+    <section id="content">
+        <!-- Content will be loaded here -->
+    </section>
+
+    <script>
+        function loadPage(page) {
+            fetch(page)
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('content').innerHTML = html;
+                })
+                .catch(error => console.error('Error fetching page:', error));
+        }
+
+        // Load the default page (e.g., about.html) on page load
+        loadPage('about.html');
+    </script>
 
 </body>
 
