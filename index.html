@@ -4,30 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Website</title>
+    <title>Rui Gao - Personal Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+            color: #333;
         }
 
         header {
+            background-color: #3498db;
+            color: #fff;
             text-align: center;
             padding: 20px;
-            background-color: #f2f2f2;
+        }
+
+        nav {
+            background-color: #2980b9;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ecf0f1;
         }
 
         section {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
-            color: #333;
+            color: #3498db;
         }
 
         p {
-            color: #666;
+            color: #555;
         }
     </style>
 </head>
@@ -35,24 +68,18 @@
 <body>
 
     <header>
-        <h1>Your Name</h1>
+        <h1>Rui Gao</h1>
         <p>Welcome to my personal website</p>
     </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>Write a brief introduction about yourself.</p>
-
-        <h2>Projects</h2>
+    <nav>
         <ul>
-            <li><a href="#">Project 1</a></li>
-            <li><a href="#">Project 2</a></li>
-            <!-- Add more projects as needed -->
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="peer-reviewed.html">Peer-reviewed Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
         </ul>
-
-        <h2>Contact</h2>
-        <p>Email: rui.gao@msstate.edu</p>
-    </section>
+    </nav>
 
 </body>
 
