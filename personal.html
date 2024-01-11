@@ -96,7 +96,7 @@
         </ul>
     </nav>
 
-    <div class="columns">
+<!--     <div class="columns">
         <div class="column">
             <h1>Sports</h1>
             <p>Content related to sports.</p>
@@ -104,7 +104,34 @@
                 <source src="Materials/Shot3.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-        </div>
+        </div> -->
+    <div class="columns">
+        <div class="column" id="sportsColumn">
+            <h1>Sports</h1>
+            <p>Content related to sports.</p>
+            <video id="video1" width="80%" height="auto" controls autoplay loop muted>
+                <source src="Materials/Shot3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video id="video2" width="80%" height="auto" class="hidden" controls autoplay loop muted>
+                <source src="Materials/AnotherSportsVideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>            
+    </div>
+
+    <script>
+        const video1 = document.getElementById('video1');
+        const video2 = document.getElementById('video2');
+
+        video1.addEventListener('ended', function () {
+            // Hide the first video and show the second video when the first video ends
+            video1.classList.add('hidden');
+            video2.classList.remove('hidden');
+            video2.play();
+        });
+    </script>
+
 
         <div class="column">
             <h1>Music</h1>
