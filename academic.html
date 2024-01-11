@@ -1,21 +1,127 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2299.7">
-  <style type="text/css">
-    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p3 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
-    span.s1 {font-kerning: none}
-    span.s2 {text-decoration: underline ; font-kerning: none}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rui's Academic Life</title>
+    <style>
+        body {
+            font-family: 'Garamond', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            font-family: 'Garamond', sans-serif;
+            background-color: #87CEEB;
+            color: #000000;
+            font-weight: bold;
+            text-align: center;
+            padding: 26px;
+        }
+
+        nav {
+            background-color: #000000;
+            padding: 12px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ecf0f1;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #000000;
+        }
+        p {
+            color: #555;
+            font-family: 'Garamond', serif;
+        }
+
+        .columns {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
+
 <body>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>About Me</b></span></h1>
-<p class="p2"><span class="s1">Write a brief introduction about yourself.</span></p>
-<p class="p3"><span class="s2"><a href="file:///Users/ruigao/Documents/GitHub/RuiGao9.github.io/index.html">Back to Home</a></span></p>
+
+    <header>
+        <h1>Rui's Academic Life</h1>
+        <p>你好～ياخشىمۇسىز～Hallo～Hola～Olá～مرحبًا～こんにちは～안녕하세요～Merhaba～Привет～Сайн уу～Bonjour～Ciao～Γειά σου</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav>
+
+    <div class="columns">
+        <div class="column">
+            <h1>Sports</h1>
+            <p>Content related to sports.</p>
+            <video width="80%" height="auto" controls autoplay loop muted>
+                <source src="Materials/Shot3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="column">
+            <h1>Music</h1>
+            <p>Content related to music.</p>
+            <iframe width="80%" height="auto" src="https://www.bilibili.com/video/BV1Ys4y1s7gx/?spm_id_from=333.999.0.0&vd_source=66f75d956844492317bca2a34f9ae2df" frameborder="0" controls autoplay loop muted></iframe>
+        </div>
+
+        <div class="column">
+            <h1>Travel</h1>
+            <p>Content related to travel.</p>
+            <video width="80%" height="auto" controls autoplay loop muted>
+                <source src="Materials/Middle.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
 </body>
+
 </html>
