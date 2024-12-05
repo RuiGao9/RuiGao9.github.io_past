@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rui Gao's personal website showcasing research, publications, and professional services in hydrology, water resources, and remote sensing.">
     <title>My Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="grlab.html">GR Lab</a></li>
+            <li class="dropdown">
+                <a href="grlab.html" class="dropbtn">GR Lab</a>
+                <ul class="dropdown-content">
+                    <li><a href="labnews.html">Lab News</a></li>
+                    <li><a href="labpeople.html">Lab People</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                </ul>
+            </li>
             <li><a href="people.html">People</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="publications.html">Publications</a></li>
@@ -24,7 +33,7 @@
         <p>Explore the various sections of my site using the navigation bar above.</p>
     </section>
     <section id="video">
-        <iframe width=100% height="360" 
+        <iframe width=100% height="500"
         src="https://www.youtube.com/embed/bhJ1rXVGAv0?si=NgEomhHx4wU_PL3x" 
         title="YouTube video player" 
         frameborder="0" 
@@ -32,6 +41,8 @@
         referrerpolicy="strict-origin-when-cross-origin" 
         allowfullscreen></iframe>
     </section>
+
+    
     <section>
         <h1>Welcome!!!</h1>    
             <p>Rui has a Ph.D. in Civil and Environmental Engineering from Utah State University and an M.S. in Hydraulic and Civil Engineering from Xinjiang Agricultural University.<p> 
@@ -53,5 +64,10 @@
         <h1>Past News</h1>    
             <p>September 24, 2024: Rui was invited to speak to the Secure Water Future (SWF) group at the University of California Merced.</p>
     </section>
+    <footer>
+        <p>&copy; 2024 Rui Gao | All Rights Reserved</p>
+    </footer>
 </body>   
 </html>
+
+

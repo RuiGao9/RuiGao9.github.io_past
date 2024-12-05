@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
@@ -10,13 +18,3 @@
         <li><a href="board.html">Board</a></li>
     </ul>
 </nav>
-
-<div id="navbar"></div>
-<script>
-    fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('navbar').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading navbar:', error));
-</script>

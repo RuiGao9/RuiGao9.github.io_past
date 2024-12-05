@@ -1,5 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 <nav>
     <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="grlab.html" class="dropbtn">GR Lab</a>
+            <ul class="dropdown-content">
+                <li><a href="labnews.html">Lab News</a></li>
+                <li><a href="labpeople.html">Lab People</a></li>
+                <li><a href="labresourcestools.html">Lab Resources&Tools</a></li>
+                <li><a href="labcollaborations.html">Projects</a></li>
+                <li><a href="publications.html">Publications</a></li>
+            </ul>
+        </li>
         <li><a href="index.html">Home</a></li>
         <li><a href="grlab.html">GR Lab</a></li>
         <li><a href="people.html">People</a></li>
@@ -10,17 +29,6 @@
         <li><a href="board.html">Board</a></li>
     </ul>
 </nav>
-
-<!-- <div id="navbar"></div>
-<script>
-    fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('navbar').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading navbar:', error));
-</script> -->
-
 
 <section id="overview">
     <h1>Welcome to GR Lab</h1>
