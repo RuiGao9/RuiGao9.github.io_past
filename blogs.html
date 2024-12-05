@@ -1,0 +1,22 @@
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="grlab.html">GR Lab</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="board.html">Board</a></li>
+    </ul>
+</nav>
+
+<div id="navbar"></div>
+<script>
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navbar:', error));
+</script>

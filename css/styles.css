@@ -1,0 +1,36 @@
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+ol {
+    padding-left: 20px; /* Add padding to the left */
+    line-height: 1.8; /* Adjust line spacing */
+}
+
+ol li {
+    margin-bottom: 10px; /* Add space between items */
+}
